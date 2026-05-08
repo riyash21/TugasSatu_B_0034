@@ -43,6 +43,7 @@ btnTambah.addEventListener("click", function(){
         } else {
             labelStatus.innerHTML = "Progress";
             labelStatus.className = "status-progress";
+            containerTeks.classList.remove("task-done");
         }
     });
 
