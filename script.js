@@ -15,6 +15,9 @@ btnTambah.addEventListener("click", function(){
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     listbaru.appendChild(checkbox);
+    
+    const container = document.createElement("div");
+    containerTeks.style.flex = "1";
 
     const span  =document.createElement("span");
     span.innerHTML = inputValue.value;
