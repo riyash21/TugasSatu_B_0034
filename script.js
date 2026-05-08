@@ -39,6 +39,7 @@ btnTambah.addEventListener("click", function(){
         if(this.checked){
             labelStatus.innerHTML = "Done";
             labelStatus.className = "status-done";
+            containerTeks.classList.add("task-done");
         } else {
             labelStatus.innerHTML = "Progress";
             labelStatus.className = "status-progress";
