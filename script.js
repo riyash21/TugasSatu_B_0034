@@ -57,6 +57,10 @@ btnTambah.addEventListener("click", function(){
     };
     listbaru.appendChild(btnEdit);
 
+    const btnDelete = document.createElement("button");
+    btnDelete.innerHTML = "Delete";
+    btnDelete.className = "btn-delete";
+
     container.appendChild(spanTugas);
     container.appendChild(spanTanggal);
     listbaru.appendChild(container);
