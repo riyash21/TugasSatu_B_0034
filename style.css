@@ -94,3 +94,7 @@ button{
 .btn-edit:hover{
     background-color: darkorange;
 }
+
+.btn-delete{
+    background-color: red;
+}
