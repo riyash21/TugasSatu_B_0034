@@ -26,6 +26,10 @@ btnTambah.addEventListener("click", function(){
     spanTanggal.innerHTML = ` (${inputDate.value}) `;
     spanTanggal.style.display = "block";
 
+    container.appendChild(spanTugas);
+    container.appendChild(spanTanggal);
+    listbaru.appendChild(container);
+
     const labelStatus = document.createElement("span");
     labelStatus.innerHTML = "Progress";
     labelStatus.className = "status-label";
@@ -67,11 +71,7 @@ btnTambah.addEventListener("click", function(){
         }
     };
     listbaru.appendChild(btnDelete);
-
-    container.appendChild(spanTugas);
-    container.appendChild(spanTanggal);
-    listbaru.appendChild(container);
-    
+        
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
 
