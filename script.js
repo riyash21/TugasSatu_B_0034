@@ -11,6 +11,11 @@ btnTambah.addEventListener("click", function(){
     }
 
     const listbaru = document.createElement("li");
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    listbaru.appendChild(checkbox);
+
     const span  =document.createElement("span");
     span.innerHTML = inputValue.value;
     
