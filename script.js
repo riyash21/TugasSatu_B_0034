@@ -44,6 +44,17 @@ btnTambah.addEventListener("click", function(){
     const btnEdit = document.createElement("button");
     btnEdit.innerHTML = "Edit";
     btnEdit.className = "btn-edit";
+
+    btnEdit.onclick = function(){
+        const newTask = prompt("Edit tugas:", spanTugas.innerHTML);
+        if(newTask){
+            spanTugas.innerHTML = newTask;
+            const newDate = prompt("Edit tanggal (YYYY-MM-DD):", inputDate.value);
+            if(newDate){
+                spanTanggal.innerHTML = ` (${newDate}) `;
+            }
+        }
+    };
     listbaru.appendChild(btnEdit);
 
     container.appendChild(spanTugas);
