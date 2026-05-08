@@ -63,3 +63,10 @@ li{
     gap: 10px;
     flex-wrap: wrap;
 }
+
+.status-label{
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    border-radius: 3px;
+}

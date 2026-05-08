@@ -28,7 +28,7 @@ btnTambah.addEventListener("click", function(){
 
     const labelStatus = document.createElement("span");
     labelStatus.innerHTML = "Progress";
-    labelStatus.className = "status-progress";
+    labelStatus.className = "status-label";
     listbaru.appendChild(labelStatus);
 
     checkbox.addEventListener("change", function(){
