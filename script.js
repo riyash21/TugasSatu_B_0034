@@ -41,6 +41,11 @@ btnTambah.addEventListener("click", function(){
         }
     });
 
+    const btnEdit = document.createElement("button");
+    btnEdit.innerHTML = "Edit";
+    btnEdit.className = "btn-edit";
+    listbaru.appendChild(btnEdit);
+
     container.appendChild(spanTugas);
     container.appendChild(spanTanggal);
     listbaru.appendChild(container);
