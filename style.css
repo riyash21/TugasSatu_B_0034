@@ -86,3 +86,11 @@ button{
     cursor: pointer;
     color: white;
 }
+
+.btn-edit{
+    background-color: orange;
+}
+
+.btn-edit:hover{
+    background-color: darkorange;
+}
