@@ -16,19 +16,19 @@ btnTambah.addEventListener("click", function(){
     checkbox.type = "checkbox";
     listbaru.appendChild(checkbox);
     
-    const container = document.createElement("div");
+    const containerTeks = document.createElement("div");
     containerTeks.style.flex = "1";
 
     const spanTugas  = document.createElement("span");
-    span.innerHTML = inputValue.value;
+    spanTugas.innerHTML = inputValue.value;
 
     const spanTanggal = document.createElement("small");
     spanTanggal.innerHTML = ` (${inputDate.value}) `;
     spanTanggal.style.display = "block";
 
-    container.appendChild(spanTugas);
-    container.appendChild(spanTanggal);
-    listbaru.appendChild(container);
+    containerTeks.appendChild(spanTugas);
+    containerTeks.appendChild(spanTanggal);
+    listbaru.appendChild(containerTeks);
 
     const labelStatus = document.createElement("span");
     labelStatus.innerHTML = "Progress";
@@ -68,13 +68,12 @@ btnTambah.addEventListener("click", function(){
     btnDelete.className = "btn-delete";
 
     btnDelete.onclick = function(){
-        if(confirm("Hpus tugas ini?")){
+        if(confirm("Hapus tugas ini?")){
             listbaru.remove();
         }
     };
     listbaru.appendChild(btnDelete);
         
-    listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
 
     inputValue.value = "";
