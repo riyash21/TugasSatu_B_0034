@@ -31,6 +31,16 @@ btnTambah.addEventListener("click", function(){
     labelStatus.className = "status-progress";
     listbaru.appendChild(labelStatus);
 
+    checkbox.addEventListener("change", function(){
+        if(this.checked){
+            labelStatus.innerHTML = "Done";
+            labelStatus.className = "status-done";
+        } else {
+            labelStatus.innerHTML = "Progress";
+            labelStatus.className = "status-progress";
+        }
+    });
+
     container.appendChild(spanTugas);
     container.appendChild(spanTanggal);
     listbaru.appendChild(container);
