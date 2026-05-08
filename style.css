@@ -78,3 +78,11 @@ li{
 .done{
     color: green;
 }
+
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
