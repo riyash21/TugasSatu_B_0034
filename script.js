@@ -61,6 +61,13 @@ btnTambah.addEventListener("click", function(){
     btnDelete.innerHTML = "Delete";
     btnDelete.className = "btn-delete";
 
+    btnDelete.onclick = function(){
+        if(confirm("Hpus tugas ini?")){
+            listbaru.remove();
+        }
+    };
+    listbaru.appendChild(btnDelete);
+
     container.appendChild(spanTugas);
     container.appendChild(spanTanggal);
     listbaru.appendChild(container);
