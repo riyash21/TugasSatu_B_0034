@@ -26,6 +26,11 @@ btnTambah.addEventListener("click", function(){
     spanTanggal.innerHTML = ` (${inputDate.value}) `;
     spanTanggal.style.display = "block";
 
+    const labelStatus = document.createElement("span");
+    labelStatus.innerHTML = "Progress";
+    labelStatus.className = "status-progress";
+    listbaru.appendChild(labelStatus);
+
     container.appendChild(spanTugas);
     container.appendChild(spanTanggal);
     listbaru.appendChild(container);
