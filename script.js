@@ -19,8 +19,12 @@ btnTambah.addEventListener("click", function(){
     const container = document.createElement("div");
     containerTeks.style.flex = "1";
 
-    const span  =document.createElement("span");
+    const spanTugas  = document.createElement("span");
     span.innerHTML = inputValue.value;
+
+    const spanTanggal = document.createElement("small");
+    spanTanggal.innerHTML = ` (${inputDate.value}) `;
+    spanTanggal.style.display = "block";
     
     listbaru.appendChild(span);
     daftarTugas.appendChild(listbaru);
